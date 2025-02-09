@@ -1,8 +1,10 @@
 const display = document.getElementById("display");
+const lapList = document.getElementById("laps");
 let timer = null;
 let startTime = 0;
 let elapsedTime = 0;
 let isRunning = false;
+let laps = []; 
 
 function start(){
     if(!isRunning){
@@ -26,6 +28,8 @@ function reset(){
     elapsedTime = 0;
     isRunning = false;    
     display.textContent = "00:00:00:00";
+    laps = [];
+    lapList.innerHTML = ""; 
 }
 
 function update(){
@@ -44,4 +48,14 @@ function update(){
     milliseconds = String(milliseconds).padStart(2, "0");
 
     display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
+}
+
+function recordLap() {
+    if (isRunning) {
+        let lapTime = display.textContent;
+        laps.push(lapTime);
+        let lapItem = document.createElement("li");
+        lapItem.textContent = `Lap ${laps.length}: ${lapTime}`;
+        lapList.appendChild(lapItem);
+    }
 }
