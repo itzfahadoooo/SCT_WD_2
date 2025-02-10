@@ -6,6 +6,8 @@ let elapsedTime = 0;
 let isRunning = false;
 let laps = []; 
 
+
+
 function start(){
     if(!isRunning){
         startTime = Date.now() - elapsedTime;
