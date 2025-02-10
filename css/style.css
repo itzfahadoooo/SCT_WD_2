@@ -1,188 +1,185 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: hsl(0, 2%, 10%);
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 2%, 10%);
+  margin: 0;
 
-
-
-    
-    padding: 20px;
+  padding: 20px;
 }
 
 #myH1 {
-    font-size: 4rem;
-    font-family: "Arial", sans-serif;
-    color: hsl(0, 1%, 46%);
-    text-align: center;
+  font-size: 4rem;
+  font-family: "Arial", sans-serif;
+  color: hsl(0, 1%, 46%);
+  text-align: center;
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    border: 2px solid hsl(0, 1%, 46%);
-    border-radius: 50px;
-    background-color: #000319;
-    width: 90%;
-    max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border: 2px solid hsl(0, 1%, 46%);
+  border-radius: 50px;
+  background-color: #000319;
+  width: 90%;
+  max-width: 600px;
 }
 
 #display {
-    font-size: 5rem;
-    font-family: monospace;
-    font-weight: bold;
-    color: hsl(0, 1%, 46%);
-    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
-    margin-bottom: 25px;
-    text-align: center;
+  font-size: 5rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: hsl(0, 1%, 46%);
+  text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 #controls {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 #controls button {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    margin: 5px;
-    min-width: 125px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
-    transition: background-color 0.5s ease;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s ease;
 }
 
 #startBtn {
-    background-color: hsl(115, 100%, 40%);
+  background-color: hsl(115, 100%, 40%);
 }
 #startBtn:hover {
-    background-color: hsl(115, 100%, 30%);
+  background-color: hsl(115, 100%, 30%);
 }
 
 #stopBtn {
-    background-color: hsl(10, 90%, 50%);
+  background-color: hsl(10, 90%, 50%);
 }
 #stopBtn:hover {
-    background-color: hsl(10, 90%, 40%);
+  background-color: hsl(10, 90%, 40%);
 }
 
 #resetBtn {
-    background-color: hsl(205, 90%, 60%);
+  background-color: hsl(205, 90%, 60%);
 }
 #resetBtn:hover {
-    background-color: hsl(205, 90%, 50%);
+  background-color: hsl(205, 90%, 50%);
 }
 
 #lapBtn {
-    background-color: hsl(45, 90%, 50%);
+  background-color: hsl(45, 90%, 50%);
 }
 #lapBtn:hover {
-    background-color: hsl(45, 90%, 40%);
+  background-color: hsl(45, 90%, 40%);
 }
 
 #lapcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #laptimes {
-    color: hsl(0, 1%, 46%);
-    margin-top: 20px;
-    font-size: 1.8rem;
-    text-align: center;
+  color: hsl(0, 1%, 46%);
+  margin-top: 20px;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 #laps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-    color: hsl(0, 1%, 46%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  color: hsl(0, 1%, 46%);
 }
 
 .lap-item {
-    background-color: hsl(0, 2%, 20%);
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    font-family: monospace;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    min-width: 120px;
+  background-color: hsl(0, 2%, 20%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  min-width: 120px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #myH1 {
-        font-size: 3rem;
-    }
+  #myH1 {
+    font-size: 3rem;
+  }
 
-    #container {
-        width: 95%;
-        padding: 20px;
-    }
+  #container {
+    width: 95%;
+    padding: 20px;
+  }
 
-    #display {
-        font-size: 4rem;
-    }
+  #display {
+    font-size: 4rem;
+  }
 
-    #controls button {
-        font-size: 1.2rem;
-        padding: 8px 16px;
-        min-width: 100px;
-    }
+  #controls button {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    min-width: 100px;
+  }
 
-    #laps {
-        flex-direction: column;
-        align-items: center;
-    }
+  #laps {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .lap-item {
-        width: 90%;
-        text-align: center;
-    }
+  .lap-item {
+    width: 90%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
-    #myH1 {
-        font-size: 2.5rem;
-    }
+  #myH1 {
+    font-size: 2.5rem;
+  }
 
-    #display {
-        font-size: 3.5rem;
-    }
+  #display {
+    font-size: 3.5rem;
+  }
 
-    #controls {
-        flex-direction: column;
-        gap: 5px;
-    }
+  #controls {
+    flex-direction: column;
+    gap: 5px;
+  }
 
-    #controls button {
-        font-size: 1rem;
-        padding: 8px 14px;
-        width: 100%;
-    }
+  #controls button {
+    font-size: 1rem;
+    padding: 8px 14px;
+    width: 100%;
+  }
 
-    #laps {
-        flex-direction: column;
-        align-items: center;
-    }
+  #laps {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .lap-item {
-        font-size: 1.2rem;
-        width: 100%;
-    }
+  .lap-item {
+    font-size: 1.2rem;
+    width: 100%;
+  }
 }
